@@ -14,6 +14,9 @@
         android:theme="@style/Theme.OnlineBusTicketingSystem"
         tools:targetApi="31">
         <activity
+            android:name=".ExistingCards"
+            android:exported="false" />
+        <activity
             android:name=".BankAccount"
             android:exported="false" />
         <activity

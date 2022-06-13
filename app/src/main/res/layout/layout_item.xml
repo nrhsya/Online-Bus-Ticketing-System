@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/card"
+            android:padding="5dp"
+            android:id="@+id/cardImg"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Card Number"
+                android:textSize="20sp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/txtCardNum"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Expiry Date"
+                android:textSize="20sp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/txtExpDate"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CVV"
+                android:textSize="20sp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/txtCvv"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/editBtn"
+                    android:layout_width="142dp"
+                    android:layout_height="wrap_content"
+                    android:text="Update"
+                    android:layout_margin="5dp"/>
+
+                <Button
+                    android:id="@+id/deleteBtn"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:text="Delete"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -38,6 +38,14 @@
                 android:textSize="30sp"
                 android:textStyle="bold" />
 
+            <Button
+                android:id="@+id/viewBtn"
+                android:layout_width="86dp"
+                android:layout_height="wrap_content"
+                android:text="Existing Cards"
+                android:textSize="10sp"
+                android:layout_marginLeft="20dp"/>
+
         </LinearLayout>
 
     </RelativeLayout>
@@ -61,11 +69,11 @@
             android:id="@+id/editCardNum"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:ems="10"
             android:layout_below="@+id/cardNumberTxt"
-            android:text="Insert Card Number"
             android:layout_marginLeft="30dp"
-            android:inputType="number" />
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Insert Card Number" />
 
         <TextView
             android:id="@+id/expiryDateTxt"
@@ -82,7 +90,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:layout_below="@+id/expiryDateTxt"
-            android:text="MM/YY"
+            android:hint="MM/YY"
             android:layout_marginLeft="30dp"
             android:inputType="date" />
 
@@ -101,9 +109,27 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:layout_below="@+id/cvvTxt"
-            android:text="CVV"
+            android:hint="CVV"
             android:layout_marginLeft="30dp"
             android:inputType="number" />
+
+        <TextView
+            android:id="@+id/fingerprintTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editCvv"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp"
+            android:text="Please click on the fingerprint sensor below for authorization: " />
+
+        <ImageView
+            android:id="@+id/imageViewFingerprint"
+            android:layout_below="@+id/fingerprintTxt"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            app:srcCompat="@drawable/fingerprint" />
 
     </RelativeLayout>
 
@@ -113,7 +139,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/cardForm"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="250dp"
+        android:layout_marginTop="100dp"
         android:text="By adding a card, you have read and agree to our terms and conditions." />
 
     <Button

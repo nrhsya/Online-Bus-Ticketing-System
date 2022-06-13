@@ -3,15 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/USER/Desktop/UMP_Assignments/SEM_6/Mobile_App_Development-2A/Group Project/Prototype/OnlineBusTicketingSystem/app/src/main/res/drawable/rounded.xml" value="0.1" />
         <entry key="..\:/Users/USER/Desktop/UMP_Assignments/SEM_6/Mobile_App_Development-2A/Group Project/Prototype/OnlineBusTicketingSystem/app/src/main/res/drawable/selector.xml" value="0.1" />
         <entry key="..\:/Users/USER/Desktop/UMP_Assignments/SEM_6/Mobile_App_Development-2A/Group Project/Prototype/OnlineBusTicketingSystem/app/src/main/res/layout/activity_add_payment_method.xml" value="0.264" />
         <entry key="..\:/Users/USER/Desktop/UMP_Assignments/SEM_6/Mobile_App_Development-2A/Group Project/Prototype/OnlineBusTicketingSystem/app/src/main/res/layout/activity_bank_account.xml" value="0.264" />
         <entry key="..\:/Users/USER/Desktop/UMP_Assignments/SEM_6/Mobile_App_Development-2A/Group Project/Prototype/OnlineBusTicketingSystem/app/src/main/res/layout/activity_cards.xml" value="0.264" />
+        <entry key="..\:/Users/USER/Desktop/UMP_Assignments/SEM_6/Mobile_App_Development-2A/Group Project/Prototype/OnlineBusTicketingSystem/app/src/main/res/layout/activity_existing_cards.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/USER/Desktop/UMP_Assignments/SEM_6/Mobile_App_Development-2A/Group Project/Prototype/OnlineBusTicketingSystem/app/src/main/res/layout/activity_main.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/USER/Desktop/UMP_Assignments/SEM_6/Mobile_App_Development-2A/Group Project/Prototype/OnlineBusTicketingSystem/app/src/main/res/layout/activity_online_banking.xml" value="0.264" />
         <entry key="..\:/Users/USER/Desktop/UMP_Assignments/SEM_6/Mobile_App_Development-2A/Group Project/Prototype/OnlineBusTicketingSystem/app/src/main/res/layout/activity_payment_mainpage.xml" value="0.264" />
         <entry key="..\:/Users/USER/Desktop/UMP_Assignments/SEM_6/Mobile_App_Development-2A/Group Project/Prototype/OnlineBusTicketingSystem/app/src/main/res/layout/activity_payment_settings.xml" value="0.264" />
         <entry key="..\:/Users/USER/Desktop/UMP_Assignments/SEM_6/Mobile_App_Development-2A/Group Project/Prototype/OnlineBusTicketingSystem/app/src/main/res/layout/activity_topup.xml" value="0.264" />
+        <entry key="..\:/Users/USER/Desktop/UMP_Assignments/SEM_6/Mobile_App_Development-2A/Group Project/Prototype/OnlineBusTicketingSystem/app/src/main/res/layout/layout_item.xml" value="0.1" />
+        <entry key="..\:/Users/USER/Desktop/UMP_Assignments/SEM_6/Mobile_App_Development-2A/Group Project/Prototype/OnlineBusTicketingSystem/app/src/main/res/layout/update_popup.xml" value="0.2" />
         <entry key="..\:/Users/USER/Desktop/UMP_Assignments/SEM_6/Mobile_App_Development-2A/Group Project/Prototype/OnlineBusTicketingSystem/app/src/main/res/menu/menu_navigation.xml" value="0.1" />
       </map>
     </option>
