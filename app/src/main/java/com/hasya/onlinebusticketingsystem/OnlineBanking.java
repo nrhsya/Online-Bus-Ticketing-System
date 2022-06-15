@@ -31,7 +31,11 @@ public class OnlineBanking extends AppCompatActivity {
         BottomNavigationView bottomNavigationView=findViewById(R.id.bottom_navigation);
 
         // Set Payment selected
+        bottomNavigationView.setSelectedItemId(R.id.bookingSection);
+        // Set Payment selected
         bottomNavigationView.setSelectedItemId(R.id.payment);
+
+
 
         // Perform item selected listener
         /*bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {

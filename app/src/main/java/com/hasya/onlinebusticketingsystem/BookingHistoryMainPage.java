@@ -30,7 +30,7 @@ public class BookingHistoryMainPage extends AppCompatActivity {
         BottomNavigationView bottomNavigationView=findViewById(R.id.bottom_navigation);
 
         // Set Payment selected
-        bottomNavigationView.setSelectedItemId(R.id.history);
+        bottomNavigationView.setSelectedItemId(R.id.bookingSection);
 
         TextView msg_text = findViewById(R.id.fingerprint_description);
         Button btn_login = findViewById(R.id.btn_fingerprint);
