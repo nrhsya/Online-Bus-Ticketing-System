@@ -29,7 +29,7 @@ public class PaymentMainpage extends AppCompatActivity {
         bottomNavigationView.setSelectedItemId(R.id.payment);
 
         // Perform item selected listener
-        /*bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
@@ -39,14 +39,26 @@ public class PaymentMainpage extends AppCompatActivity {
                         startActivity(new Intent(getApplicationContext(),MainActivity.class));
                         overridePendingTransition(0,0);
                         return true;
-                    case R.id.booking:
-                        startActivity(new Intent(getApplicationContext(),BookingActivity.class));
+//                    case R.id.booking:
+//                        startActivity(new Intent(getApplicationContext(),BookingActivity.class));
+//                        overridePendingTransition(0,0);
+//                        return true;
+                    case R.id.bookingHistory:
+                        startActivity(new Intent(getApplicationContext(),BookingHistoryMainPage.class));
                         overridePendingTransition(0,0);
                         return true;
+//                    case R.id.payment:
+//                        startActivity(new Intent(getApplicationContext(),BookingActivity.class));
+//                        overridePendingTransition(0,0);
+//                        return true;
+//                    case R.id.Profile:
+//                        startActivity(new Intent(getApplicationContext(),BookingActivity.class));
+//                        overridePendingTransition(0,0);
+//                        return true;
                 }
                 return false;
             }
-        }); */
+        });
 
         //when the SETTING button is clicked
         ImageView setting = findViewById(R.id.settingBtn);

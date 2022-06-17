@@ -11,7 +11,7 @@
         android:title="Bookings"/>
 
     <item
-        android:id="@+id/bookingSection"
+        android:id="@+id/bookingHistory"
         android:icon="@drawable/history"
         android:title="History"/>
 
