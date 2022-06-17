@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.HashMap;
@@ -27,6 +28,13 @@ public class PerformPayment extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_perform_payment);
+
+        //BOTTOM NAVIGATION BAR
+        // Initialize and assign variable
+        BottomNavigationView bottomNavigationView=findViewById(R.id.bottom_navigation);
+
+        // Set Payment selected
+        bottomNavigationView.setSelectedItemId(R.id.payment);
 
         name = (EditText)findViewById(R.id.editName);
         age = (EditText)findViewById(R.id.editAge);
