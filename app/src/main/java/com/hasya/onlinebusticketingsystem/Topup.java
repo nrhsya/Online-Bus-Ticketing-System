@@ -83,7 +83,8 @@ public class Topup extends AppCompatActivity {
                 }
                 //if Online Banking is clicked
                 else{
-                    startActivity(new Intent(Topup.this,OnlineBanking.class));
+                    startActivity(new Intent(Topup.this,TopupAmount.class));
+//                    startActivity(new Intent(Topup.this,OnlineBanking.class));
                 }
             }
         });

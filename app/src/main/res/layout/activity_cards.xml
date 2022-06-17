@@ -72,8 +72,8 @@
             android:layout_below="@+id/cardNumberTxt"
             android:layout_marginLeft="30dp"
             android:ems="10"
-            android:inputType="number"
-            android:hint="Insert Card Number" />
+            android:hint="Insert Card Number"
+            android:inputType="number" />
 
         <TextView
             android:id="@+id/expiryDateTxt"

@@ -56,14 +56,17 @@
             android:id="@+id/ewalletTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="E-Wallet Balance" />
+            android:textStyle="bold"
+            android:text="E-Wallet Balance"
+            android:textColor="@color/black"/>
 
         <TextView
             android:id="@+id/ewalletBalance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/ewalletTxt"
-            android:text="RM" />
+            android:text="RM"
+            android:textColor="@color/white"/>
 
     </RelativeLayout>
 
@@ -82,43 +85,64 @@
             android:id="@+id/topupTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Top-Up" />
+            android:layout_centerInParent="true"
+            android:text="Top-Up"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
 
         <ImageView
             android:id="@+id/topupImg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/topupTxt"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
             app:srcCompat="@drawable/add" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/performPaySec"
+        android:layout_width="350dp"
+        android:layout_height="111dp"
+        android:layout_below="@+id/topupSec"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/peach"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/performPayTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Perform Payment"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
     </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/transactionHistorySec"
         android:layout_width="350dp"
         android:layout_height="111dp"
-        android:layout_below="@+id/topupSec"
+        android:layout_below="@+id/performPaySec"
+        android:layout_centerInParent="true"
         android:layout_marginLeft="30dp"
         android:layout_marginTop="20dp"
         android:background="@color/mint_blue"
-        android:layout_centerInParent="true"
         android:padding="10dp">
 
         <TextView
             android:id="@+id/transactionTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Transaction History"
-            android:textColor="#000000"
-            android:textSize="16sp" />
-
-        <TextView
-            android:id="@+id/div"
-            android:layout_width="match_parent"
-            android:layout_height="5dp"
-            android:layout_below="@+id/transactionTxt"
-            android:background="#000000"
-            android:backgroundTint="#000000"
-            android:layout_marginTop="10dp"/>
+            android:layout_centerInParent="true"
+            android:text="View Transaction History"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
     </RelativeLayout>
 

@@ -67,5 +67,25 @@ public class PaymentMainpage extends AppCompatActivity {
                 //Toast.makeText(PaymentMainpage.this, "This ambulance is ACTIVE!", Toast.LENGTH_SHORT).show();
             }
         });
+
+        //when the perform payment button is clicked
+        RelativeLayout payment = findViewById(R.id.performPaySec);
+        payment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(PaymentMainpage.this,PerformPayment.class));
+                //Toast.makeText(PaymentMainpage.this, "This ambulance is ACTIVE!", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        //when the view transaction history is clicked
+        RelativeLayout transaction = findViewById(R.id.transactionHistorySec);
+        transaction.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(PaymentMainpage.this,PaymentHistory.class));
+                //Toast.makeText(PaymentMainpage.this, "This ambulance is ACTIVE!", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }

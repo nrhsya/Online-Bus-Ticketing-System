@@ -22,13 +22,20 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.Executor;
 
 public class Cards extends AppCompatActivity {
+
+    EditText cardNum, cvv, expiryDate;
+    Button saveBtn;
 
     private static final int REQUEST_CODE = 10;
     ImageView imageViewCardAuthorization;
@@ -156,11 +163,6 @@ public class Cards extends AppCompatActivity {
             }
         });
 
-        EditText cdNum = findViewById(R.id.editCardNum);
-        EditText expDate = findViewById(R.id.editExpiryDate);
-        EditText cvvNum = findViewById(R.id.editCvv);
-        DataCard dataCD = new DataCard();
-
         //to retrieve data from the database
         Button viewBtn = findViewById(R.id.viewBtn);
         viewBtn.setOnClickListener(v->{
@@ -168,78 +170,48 @@ public class Cards extends AppCompatActivity {
             startActivity(intent);
         });
 
-        //send data into database when save button is clicked
-        save.setOnClickListener(v->{
-            Card cd = new Card(cdNum.getText().toString(),expDate.getText().toString(),cvvNum.getText().toString());
-            dataCD.add(cd).addOnSuccessListener(suc->{
-                //if success
-                Toast.makeText(this, "Data is successfully inserted", Toast.LENGTH_SHORT).show();
-            }).addOnFailureListener(er->{
-                //if failure
-                Toast.makeText(this, "Data insertion FAILED"+er.getMessage(), Toast.LENGTH_SHORT).show();
-            });
+        cardNum = (EditText)findViewById(R.id.editCardNum);
+        cvv = (EditText)findViewById(R.id.editCvv);
+        expiryDate = (EditText)findViewById(R.id.editExpiryDate);
 
-            //to update existing data in the database
-//            DataCard dataCD = new DataCard();
-//            HashMap<String,Object> hashMap = new HashMap<>();
-//            hashMap.put("cardNum",cdNum.getText().toString());
-//            hashMap.put("expiryDate",expDate.getText().toString());
-//            hashMap.put("cvv",cvvNum.getText().toString());
-//
-//            Card cd = new Card(cdNum.getText().toString(),expDate.getText().toString(),cvvNum.getText().toString());
-//            dataCD.update("-N4Ls3fEtf2Gx6rPwJlI",hashMap).addOnSuccessListener(suc->{
-//                //if success
-//                Toast.makeText(this, "Data is successfully UPDATED", Toast.LENGTH_SHORT).show();
-//            }).addOnFailureListener(er->{
-//                //if failure
-//                Toast.makeText(this, "Data update FAILED"+er.getMessage(), Toast.LENGTH_SHORT).show();
-//            });
+        saveBtn = (Button)findViewById(R.id.saveBtn);
+//        backBtn = (ImageView)findViewById(R.id.backBtn);
 
-            //to delete existing data from the database
-//            Card cd = new Card(cdNum.getText().toString(),expDate.getText().toString(),cvvNum.getText().toString());
-//            dataCD.remove("-N4Ls3fEtf2Gx6rPwJlI").addOnSuccessListener(suc->{
-//                //if success
-//                Toast.makeText(this, "Data is successfully DELETED", Toast.LENGTH_SHORT).show();
-//            }).addOnFailureListener(er->{
-//                //if failure
-//                Toast.makeText(this, "Data deletion FAILED"+er.getMessage(), Toast.LENGTH_SHORT).show();
-//            });
-
-
+        //when the save button is clicked
+        save.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                insertData();
+                clearAll();
+            }
         });
+    }
 
-//        //to delete existing data from DB
-//        DataCard dataCD = new DataCard();
-//        Button delete = findViewById(R.id.deleteBtn);
-//        delete.setOnClickListener(v->{
-//            Card cd = new Card(cdNum.getText().toString(),expDate.getText().toString(),cvvNum.getText().toString());
-//            dataCD.remove("-N4Ls3fEtf2Gx6rPwJlI").addOnSuccessListener(suc->{
-//                //if success
-//                Toast.makeText(this, "Data is successfully DELETED", Toast.LENGTH_SHORT).show();
-//            }).addOnFailureListener(er->{
-//                //if failure
-//                Toast.makeText(this, "Data deletion FAILED"+er.getMessage(), Toast.LENGTH_SHORT).show();
-//            });
-//        });
-//
-//        //to update existing data in the DB
-//        Button update = findViewById(R.id.updateBtn);
-//        update.setOnClickListener(v->{
-//            HashMap<String,Object> hashMap = new HashMap<>();
-//            hashMap.put("cardNum",cdNum.getText().toString());
-//            hashMap.put("expiryDate",expDate.getText().toString());
-//            hashMap.put("cvv",cvvNum.getText().toString());
-//
-//            Card cd = new Card(cdNum.getText().toString(),expDate.getText().toString(),cvvNum.getText().toString());
-//            dataCD.update("-N4Ls3fEtf2Gx6rPwJlI",hashMap).addOnSuccessListener(suc->{
-//                //if success
-//                Toast.makeText(this, "Data is successfully UPDATED", Toast.LENGTH_SHORT).show();
-//            }).addOnFailureListener(er->{
-//                //if failure
-//                Toast.makeText(this, "Data update FAILED"+er.getMessage(), Toast.LENGTH_SHORT).show();
-//            });
-//        });
+    private void insertData() {
+        Map<String,Object> map = new HashMap<>();
+        map.put("cardNum",cardNum.getText().toString());
+        map.put("cvv",cvv.getText().toString());
+        map.put("expiryDate",expiryDate.getText().toString());
 
+        FirebaseDatabase.getInstance().getReference().child("Card").push()
+                .setValue(map)
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void unused) {
+                        Toast.makeText(Cards.this, "New Card ADDED Successfully", Toast.LENGTH_SHORT).show();
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Toast.makeText(Cards.this, "! Card Insertion ERROR !", Toast.LENGTH_SHORT).show();
+                    }
+                });
+    }
 
+    private void clearAll() {
+        cardNum.setText("");
+        cvv.setText("");
+        expiryDate.setText("");
     }
 }
