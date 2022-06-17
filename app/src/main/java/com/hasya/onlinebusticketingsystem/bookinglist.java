@@ -43,7 +43,7 @@ public class bookinglist extends AppCompatActivity {
                 for (DataSnapshot dataSnapshot : snapshot.getChildren()){
 
                     BusDetails bus = dataSnapshot.getValue(BusDetails.class);
-                    list.add(bus);
+                            list.add(bus);
                 }
                 myAdapter.notifyDataSetChanged();
 
