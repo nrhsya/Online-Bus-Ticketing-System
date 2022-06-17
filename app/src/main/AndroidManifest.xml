@@ -28,10 +28,10 @@
             android:name=".AddPage"
             android:exported="false" />
         <activity
-            android:name=".booking_history_list"
+            android:name=".BookingHistoryView"
             android:exported="false" />
         <activity
-            android:name=".bookinglist"
+            android:name=".booking_history_list"
             android:exported="false" />
         <activity
             android:name=".BookingHistoryMainPage"
