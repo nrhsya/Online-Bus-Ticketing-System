@@ -51,7 +51,7 @@ public class BookingHistoryMainPage extends AppCompatActivity {
                 btn_login.setVisibility(View.GONE);
                 break;
             case BiometricManager.BIOMETRIC_ERROR_NONE_ENROLLED:
-                msg_text.setText("YOur device don't have fingerprint saved,please check your security settings");
+                msg_text.setText("Your device don't have fingerprint saved,please check your security settings");
                 btn_login.setVisibility(View.GONE);
                 break;
 
@@ -70,7 +70,7 @@ public class BookingHistoryMainPage extends AppCompatActivity {
             @Override
             public void onAuthenticationSucceeded(@NonNull BiometricPrompt.AuthenticationResult result) {
                 super.onAuthenticationSucceeded(result);
-                startActivity(new Intent(BookingHistoryMainPage.this,bookinglist.class));
+                startActivity(new Intent(BookingHistoryMainPage.this,AddPage.class));
                 Toast.makeText(getApplicationContext(),
                         "Successfully View Your Booking History", Toast.LENGTH_SHORT).show();
             }
