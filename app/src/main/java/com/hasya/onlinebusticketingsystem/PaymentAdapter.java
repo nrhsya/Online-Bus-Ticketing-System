@@ -50,6 +50,8 @@ public class PaymentAdapter extends FirebaseRecyclerAdapter<Payment,PaymentAdapt
                     public void onClick(DialogInterface dialogInterface, int i) {
                         FirebaseDatabase.getInstance().getReference().child("Payment")
                                 .child(getRef(position).getKey()).removeValue();
+
+                        Toast.makeText(holder.name.getContext(), "DELETED Successfully", Toast.LENGTH_SHORT).show();
                     }
                 });
 

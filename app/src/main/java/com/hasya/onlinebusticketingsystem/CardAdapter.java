@@ -108,6 +108,8 @@ public class CardAdapter extends FirebaseRecyclerAdapter<Card, CardAdapter.myVie
                     public void onClick(DialogInterface dialogInterface, int i) {
                         FirebaseDatabase.getInstance().getReference().child("Card")
                                 .child(getRef(position).getKey()).removeValue();
+
+                        Toast.makeText(holder.cardNum.getContext(), "DELETED Successfully", Toast.LENGTH_SHORT).show();
                     }
                 });
 
