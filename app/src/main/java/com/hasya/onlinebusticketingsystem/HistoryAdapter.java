@@ -31,6 +31,10 @@ public class HistoryAdapter extends FirebaseRecyclerAdapter<BookingHistoryModel,
         holder.dropping.setText(model.getDropping());
         holder.date.setText(model.getDate());
         holder.bus.setText(model.getBus());
+        holder.time.setText(model.getTime());
+        holder.seatNo.setText(model.getSeatNo());
+        holder.ticketNo.setText(model.getTicketNo());
+        holder.fare.setText(model.getFare());
 
 
     }
@@ -45,7 +49,7 @@ public class HistoryAdapter extends FirebaseRecyclerAdapter<BookingHistoryModel,
     class myViewHolder extends RecyclerView.ViewHolder{
 
         ImageView img;
-        TextView boarding,dropping,date,bus;
+        TextView boarding,dropping,date,bus,time,seatNo,ticketNo,fare;
 
         public myViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -55,6 +59,10 @@ public class HistoryAdapter extends FirebaseRecyclerAdapter<BookingHistoryModel,
             dropping =  (TextView) itemView.findViewById(R.id.droppingtext);
             date = (TextView)itemView.findViewById(R.id.datetext);
             bus = (TextView)itemView.findViewById(R.id.bustext);
+            time = (TextView)itemView.findViewById(R.id.timetext);
+            seatNo = (TextView)itemView.findViewById(R.id.seatNotext);
+            ticketNo = (TextView)itemView.findViewById(R.id.ticketNotext);
+            fare = (TextView)itemView.findViewById(R.id.faretext);
         }
     }
 }

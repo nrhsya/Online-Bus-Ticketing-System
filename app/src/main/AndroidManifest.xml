@@ -31,7 +31,7 @@
             android:name=".RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".PaymentMainpage"
+            android:name=".Profile"
             android:exported="false" />
         <activity
             android:name=".PaymentHistory"
@@ -77,7 +77,7 @@
             android:name=".PaymentSettings"
             android:exported="false" />
         <activity
-            android:name=".Profile"
+            android:name=".PaymentMainpage"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
