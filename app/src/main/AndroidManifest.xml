@@ -26,11 +26,11 @@
             android:exported="false" />
         <activity
             android:name=".AddPage"
-            android:exported="false"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"/>
+            android:exported="false"/>
         <activity
             android:name=".BookingHistoryView"
-            android:exported="false"/>
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"/>
         <activity
             android:name=".booking_history_list"
             android:exported="false"/>
