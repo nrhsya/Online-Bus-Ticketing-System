@@ -16,6 +16,12 @@
         android:theme="@style/Theme.OnlineBusTicketingSystem"
         tools:targetApi="31">
         <activity
+            android:name=".EditProfile"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".SelectSeat"
             android:exported="false" />
         <activity
@@ -71,7 +77,7 @@
             android:name=".PaymentSettings"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Profile"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
