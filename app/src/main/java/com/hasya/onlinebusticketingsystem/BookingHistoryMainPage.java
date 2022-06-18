@@ -70,7 +70,7 @@ public class BookingHistoryMainPage extends AppCompatActivity {
             @Override
             public void onAuthenticationSucceeded(@NonNull BiometricPrompt.AuthenticationResult result) {
                 super.onAuthenticationSucceeded(result);
-                startActivity(new Intent(BookingHistoryMainPage.this,AddPage.class));
+                startActivity(new Intent(BookingHistoryMainPage.this,BookingHistoryView.class));
                 Toast.makeText(getApplicationContext(),
                         "Successfully View Your Booking History", Toast.LENGTH_SHORT).show();
             }
