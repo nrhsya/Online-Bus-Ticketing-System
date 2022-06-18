@@ -5,7 +5,6 @@
       <map>
         <entry key="..\:/Kalaivani CB19063 Laravel/AndroidStudioProject/Online-Bus-Ticketing-System/app/src/main/res/drawable/home.xml" value="0.2555" />
         <entry key="..\:/Kalaivani CB19063 Laravel/AndroidStudioProject/Online-Bus-Ticketing-System/app/src/main/res/drawable/ic_baseline_fingerprint_24.xml" value="0.1995" />
-        <entry key="..\:/Kalaivani CB19063 Laravel/AndroidStudioProject/Online-Bus-Ticketing-System/app/src/main/res/drawable/search_icon.xml" value="0.145" />
         <entry key="..\:/Kalaivani CB19063 Laravel/AndroidStudioProject/Online-Bus-Ticketing-System/app/src/main/res/layout/activity_add_page.xml" value="0.25" />
         <entry key="..\:/Kalaivani CB19063 Laravel/AndroidStudioProject/Online-Bus-Ticketing-System/app/src/main/res/layout/activity_bank_account.xml" value="0.25" />
         <entry key="..\:/Kalaivani CB19063 Laravel/AndroidStudioProject/Online-Bus-Ticketing-System/app/src/main/res/layout/activity_booking_history_list.xml" value="0.25" />
@@ -17,9 +16,6 @@
         <entry key="..\:/Kalaivani CB19063 Laravel/AndroidStudioProject/Online-Bus-Ticketing-System/app/src/main/res/layout/activity_payment_settings.xml" value="0.25" />
         <entry key="..\:/Kalaivani CB19063 Laravel/AndroidStudioProject/Online-Bus-Ticketing-System/app/src/main/res/layout/booking.xml" value="0.25" />
         <entry key="..\:/Kalaivani CB19063 Laravel/AndroidStudioProject/Online-Bus-Ticketing-System/app/src/main/res/menu/menu_navigation.xml" value="0.25" />
-        <entry key="..\:/Kalaivani CB19063 Laravel/AndroidStudioProject/Online-Bus-Ticketing-System/app/src/main/res/menu/search.xml" value="0.25" />
-        <entry key="..\:/Users/HP/OneDrive - ump.edu.my/Documents/GitHub/Online-Bus-Ticketing-System/app/src/main/res/layout/activity_edit_profile.xml" value="0.10131712259371833" />
-        <entry key="..\:/Users/HP/OneDrive - ump.edu.my/Documents/GitHub/Online-Bus-Ticketing-System/app/src/main/res/layout/activity_profile.xml" value="0.3048211508553655" />
         <entry key="..\:/Users/USER/Desktop/UMP_Assignments/SEM_6/Mobile_App_Development-2A/Group Project/Prototype/OnlineBusTicketingSystem/app/src/main/res/drawable/rounded.xml" value="0.1" />
         <entry key="..\:/Users/USER/Desktop/UMP_Assignments/SEM_6/Mobile_App_Development-2A/Group Project/Prototype/OnlineBusTicketingSystem/app/src/main/res/drawable/selector.xml" value="0.1" />
         <entry key="..\:/Users/USER/Desktop/UMP_Assignments/SEM_6/Mobile_App_Development-2A/Group Project/Prototype/OnlineBusTicketingSystem/app/src/main/res/layout/activity_add_payment_method.xml" value="0.264" />
@@ -29,7 +25,7 @@
         <entry key="..\:/Users/USER/Desktop/UMP_Assignments/SEM_6/Mobile_App_Development-2A/Group Project/Prototype/OnlineBusTicketingSystem/app/src/main/res/layout/activity_main.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/USER/Desktop/UMP_Assignments/SEM_6/Mobile_App_Development-2A/Group Project/Prototype/OnlineBusTicketingSystem/app/src/main/res/layout/activity_online_banking.xml" value="0.264" />
         <entry key="..\:/Users/USER/Desktop/UMP_Assignments/SEM_6/Mobile_App_Development-2A/Group Project/Prototype/OnlineBusTicketingSystem/app/src/main/res/layout/activity_payment_history.xml" value="0.2604166666666667" />
-        <entry key="..\:/Users/USER/Desktop/UMP_Assignments/SEM_6/Mobile_App_Development-2A/Group Project/Prototype/OnlineBusTicketingSystem/app/src/main/res/layout/activity_payment_mainpage.xml" value="0.264" />
+        <entry key="..\:/Users/USER/Desktop/UMP_Assignments/SEM_6/Mobile_App_Development-2A/Group Project/Prototype/OnlineBusTicketingSystem/app/src/main/res/layout/activity_payment_mainpage.xml" value="0.1" />
         <entry key="..\:/Users/USER/Desktop/UMP_Assignments/SEM_6/Mobile_App_Development-2A/Group Project/Prototype/OnlineBusTicketingSystem/app/src/main/res/layout/activity_payment_settings.xml" value="0.264" />
         <entry key="..\:/Users/USER/Desktop/UMP_Assignments/SEM_6/Mobile_App_Development-2A/Group Project/Prototype/OnlineBusTicketingSystem/app/src/main/res/layout/activity_perform_payment.xml" value="0.27447916666666666" />
         <entry key="..\:/Users/USER/Desktop/UMP_Assignments/SEM_6/Mobile_App_Development-2A/Group Project/Prototype/OnlineBusTicketingSystem/app/src/main/res/layout/activity_topup.xml" value="0.264" />
@@ -38,14 +34,6 @@
         <entry key="..\:/Users/USER/Desktop/UMP_Assignments/SEM_6/Mobile_App_Development-2A/Group Project/Prototype/OnlineBusTicketingSystem/app/src/main/res/layout/payment_item.xml" value="0.1" />
         <entry key="..\:/Users/USER/Desktop/UMP_Assignments/SEM_6/Mobile_App_Development-2A/Group Project/Prototype/OnlineBusTicketingSystem/app/src/main/res/layout/update_popup.xml" value="0.2" />
         <entry key="..\:/Users/USER/Desktop/UMP_Assignments/SEM_6/Mobile_App_Development-2A/Group Project/Prototype/OnlineBusTicketingSystem/app/src/main/res/menu/menu_navigation.xml" value="0.1" />
-        <entry key="..\:/Users/User/Documents/GitHub/Online-Bus-Ticketing-System/app/src/main/res/drawable-v24/ic_facebook.xml" value="0.1505" />
-        <entry key="..\:/Users/User/Documents/GitHub/Online-Bus-Ticketing-System/app/src/main/res/layout/activity_login.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/User/Documents/GitHub/Online-Bus-Ticketing-System/app/src/main/res/layout/activity_register.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/fatih/OneDrive/Documents/GitHub/Online-Bus-Ticketing-System/app/src/main/res/drawable/ic_baseline_calendar_today_24.xml" value="0.1" />
-        <entry key="..\:/Users/fatih/OneDrive/Documents/GitHub/Online-Bus-Ticketing-System/app/src/main/res/drawable/ic_swap_horiz_white_24dp.xml" value="0.1" />
-        <entry key="..\:/Users/fatih/OneDrive/Documents/GitHub/Online-Bus-Ticketing-System/app/src/main/res/layout/activity_main.xml" value="0.1" />
-        <entry key="..\:/Users/fatih/OneDrive/Documents/GitHub/Online-Bus-Ticketing-System/app/src/main/res/layout/activity_select_bus.xml" value="0.1" />
-        <entry key="..\:/Users/fatih/OneDrive/Documents/GitHub/Online-Bus-Ticketing-System/app/src/main/res/layout/activity_select_seat.xml" value="0.1" />
       </map>
     </option>
   </component>

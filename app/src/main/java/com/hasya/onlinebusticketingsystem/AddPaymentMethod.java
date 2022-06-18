@@ -98,22 +98,13 @@ public class AddPaymentMethod extends AppCompatActivity {
             }
         });
 
-        //when the Topup Balance button is clicked
-        /*RelativeLayout paymentMethod = findViewById(R.id.addPaymentMethodSec);
-        paymentMethod.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(AddPaymentMethod.this,AddPaymentMethod.class));
-                //Toast.makeText(PaymentMainpage.this, "This ambulance is ACTIVE!", Toast.LENGTH_SHORT).show();
-            }
-        });*/
-
         //when the Back button is clicked
         ImageView back = findViewById(R.id.backBtn);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(AddPaymentMethod.this,PaymentSettings.class));
+                finish();
+//                startActivity(new Intent(AddPaymentMethod.this,PaymentSettings.class));
                 //Toast.makeText(PaymentMainpage.this, "This ambulance is ACTIVE!", Toast.LENGTH_SHORT).show();
             }
         });
