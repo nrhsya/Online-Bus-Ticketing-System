@@ -1,18 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#DF9C9C"
+    android:orientation="vertical">
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:translationX="100dp"
+        android:translationY="160dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="OR"
+        android:textSize="40sp"
+        android:translationX="70dp"
+        android:translationY="200dp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/bt_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Location"
+        android:translationX="180dp"
+        android:translationY="150dp" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:translationX="100dp"
+        android:translationY="180dp" />
+
+    <Button
+        android:id="@+id/datePickerButton"
+        style="?android:spinnerStyle"
+        android:layout_width="302dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:onClick="openDatePicker"
+        android:text="JAN 01 2022"
+        android:textSize="20sp"
+        android:translationX="100sp"
+        android:translationY="200sp" />
+
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="203dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:color/holo_red_light"
+        android:text="Search"
+        android:translationY="210dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="50dp"
+        android:layout_height="47dp"
+        android:translationX="35dp"
+        android:translationY="-150dp"
+        app:srcCompat="@drawable/get_on_bus" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="47dp"
+        android:layout_height="48dp"
+        android:translationX="35dp"
+        android:translationY="-20dp"
+        app:srcCompat="@drawable/get_out_bus" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="69dp"
+        android:layout_height="53dp"
+        android:translationX="25dp"
+        app:srcCompat="@drawable/ic_baseline_calendar_today_24" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#C83A3A"
+        android:text="Bus Tickets"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:translationY="-455sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="32dp">
+
+
+    </LinearLayout>
+</LinearLayout>
+
