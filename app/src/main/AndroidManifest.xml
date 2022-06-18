@@ -16,6 +16,12 @@
         android:theme="@style/Theme.OnlineBusTicketingSystem"
         tools:targetApi="31">
         <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentMainpage"
+            android:exported="false" />
+        <activity
             android:name=".PaymentHistory"
             android:exported="false" />
         <activity
@@ -26,40 +32,40 @@
             android:exported="false" />
         <activity
             android:name=".AddPage"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".BookingHistoryView"
             android:exported="false"
-            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar"/>
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar" />
         <activity
             android:name=".booking_history_list"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".BookingHistoryMainPage"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".ExistingCards"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".BankAccount"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".OnlineBanking"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".Cards"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".Topup"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".AddPaymentMethod"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".PaymentSettings"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
-            android:name=".PaymentMainpage"
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
