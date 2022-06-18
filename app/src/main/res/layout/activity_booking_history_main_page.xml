@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BookingHistoryMainPage">
+    tools:context=".BookingHistoryMainPage"
+    android:background="@color/colorGrey">
 
     <RelativeLayout
         android:id="@+id/bookingSection"
@@ -55,7 +56,7 @@
         android:layout_marginEnd="37dp"
         android:layout_marginBottom="464dp"
         android:text="Scan your finger print to view the booking history"
-        android:textColor="#4053C1"
+        android:textColor="#000"
         android:textSize="24sp"
         android:textStyle="bold|italic" />
 
@@ -75,7 +76,7 @@
 
     <Button
         android:id="@+id/btn_fingerprint"
-        android:layout_width="172dp"
+        android:layout_width="173dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"

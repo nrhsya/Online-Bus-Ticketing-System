@@ -23,49 +23,204 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:text="Boarding:"
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/img1"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:id="@+id/boardingtext"
             android:text="Boarding"
-            android:textStyle="bold"
+            android:textStyle="normal"
             android:textSize="15sp"
             android:textColor="#000"
             android:layout_toRightOf="@+id/img1"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginLeft="90dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dropping:"
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/img1"
+            android:layout_below="@id/boardingtext"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/droppingtext"
             android:text="Dropping"
-            android:textStyle="bold"
+            android:textStyle="normal"
             android:textSize="15sp"
             android:textColor="#000"
             android:layout_toRightOf="@+id/img1"
             android:layout_below="@id/boardingtext"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginLeft="90dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date:"
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/img1"
+            android:layout_below="@id/droppingtext"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/datetext"
             android:text="Date"
-            android:textStyle="bold"
+            android:textStyle="normal"
             android:textSize="15sp"
             android:textColor="#000"
             android:layout_toRightOf="@+id/img1"
             android:layout_below="@id/droppingtext"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginLeft="90dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bus:"
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/img1"
+            android:layout_below="@id/datetext"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/bustext"
-            android:text="Date"
-            android:textStyle="bold"
+            android:text="Bus"
+            android:textStyle="normal"
             android:textSize="15sp"
             android:textColor="#000"
             android:layout_toRightOf="@+id/img1"
             android:layout_below="@id/datetext"
-            android:layout_marginLeft="10dp"/>
+            android:layout_marginLeft="90dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Time:"
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/img1"
+            android:layout_below="@id/bustext"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/timetext"
+            android:text="Time"
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:layout_toRightOf="@+id/img1"
+            android:layout_below="@id/bustext"
+            android:layout_marginLeft="90dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seat No:"
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/img1"
+            android:layout_below="@id/timetext"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seatNotext"
+            android:text="Seat No"
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:layout_toRightOf="@+id/img1"
+            android:layout_below="@id/timetext"
+            android:layout_marginLeft="90dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ticket No:"
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/img1"
+            android:layout_below="@id/seatNotext"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ticketNotext"
+            android:text="Ticket No"
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:layout_toRightOf="@+id/img1"
+            android:layout_below="@id/seatNotext"
+            android:layout_marginLeft="90dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fare:"
+            android:textSize="15sp"
+            android:layout_toRightOf="@+id/img1"
+            android:layout_below="@id/ticketNotext"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/faretext"
+            android:text="Ticket No"
+            android:textStyle="normal"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:layout_toRightOf="@+id/img1"
+            android:layout_below="@id/ticketNotext"
+            android:layout_marginLeft="90dp"/>
+
+        <LinearLayout
+            android:layout_below="@id/faretext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnDeleteHistory"
+                android:layout_width="173dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="130dp"
+                android:text="Delete"
+                android:textAllCaps="false"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+        </LinearLayout>
+
 
     </RelativeLayout>
 

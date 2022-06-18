@@ -3,6 +3,7 @@ package com.hasya.onlinebusticketingsystem;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -31,6 +32,39 @@ public class BookingHistoryMainPage extends AppCompatActivity {
 
         // Set Payment selected
         bottomNavigationView.setSelectedItemId(R.id.bookingHistory);
+
+        // Perform item selected listener
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+                switch(item.getItemId())
+                {
+                    case R.id.home:
+                        startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+//                    case R.id.booking:
+//                        startActivity(new Intent(getApplicationContext(),BookingActivity.class));
+//                        overridePendingTransition(0,0);
+//                        return true;
+                    case R.id.bookingHistory:
+                        startActivity(new Intent(getApplicationContext(),BookingHistoryMainPage.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.payment:
+//                        startActivity(new Intent(getApplicationContext(),BookingActivity.class));
+//                        overridePendingTransition(0,0);
+//                        return true;
+//                    case R.id.Profile:
+//                        startActivity(new Intent(getApplicationContext(),BookingActivity.class));
+//                        overridePendingTransition(0,0);
+//                        return true;
+                }
+                return false;
+            }
+        });
+        //End navigation
 
         TextView msg_text = findViewById(R.id.fingerprint_description);
         Button btn_login = findViewById(R.id.btn_fingerprint);
