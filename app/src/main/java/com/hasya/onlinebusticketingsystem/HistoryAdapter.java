@@ -1,16 +1,22 @@
 package com.hasya.onlinebusticketingsystem;
 
+import android.annotation.SuppressLint;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class HistoryAdapter extends FirebaseRecyclerAdapter<BookingHistoryModel,HistoryAdapter.myViewHolder> {
 
@@ -25,7 +31,7 @@ public class HistoryAdapter extends FirebaseRecyclerAdapter<BookingHistoryModel,
     }
 
     @Override
-    protected void onBindViewHolder(@NonNull myViewHolder holder, int position, @NonNull BookingHistoryModel model) {
+    protected void onBindViewHolder(@NonNull myViewHolder holder, @SuppressLint("RecyclerView") final int position, @NonNull BookingHistoryModel model) {
 
         holder.boarding.setText(model.getBoarding());
         holder.dropping.setText(model.getDropping());
@@ -35,6 +41,32 @@ public class HistoryAdapter extends FirebaseRecyclerAdapter<BookingHistoryModel,
         holder.seatNo.setText(model.getSeatNo());
         holder.ticketNo.setText(model.getTicketNo());
         holder.fare.setText(model.getFare());
+
+        holder.btnDeleteHistory.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(holder.boarding.getContext());
+                builder.setTitle("Are you Sure ?");
+                builder.setMessage("Deleted data can't be undo.");
+
+                builder.setPositiveButton("Delete", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        FirebaseDatabase.getInstance().getReference().child("BusDetails")
+                                .child(getRef(position).getKey()).removeValue();
+
+
+                    }
+                });
+                builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        Toast.makeText(holder.boarding.getContext(),"Cancelled.",Toast.LENGTH_SHORT).show();
+                    }
+                });
+                builder.show();
+            }
+        });
 
 
     }
@@ -51,6 +83,8 @@ public class HistoryAdapter extends FirebaseRecyclerAdapter<BookingHistoryModel,
         ImageView img;
         TextView boarding,dropping,date,bus,time,seatNo,ticketNo,fare;
 
+        Button btnDeleteHistory;
+
         public myViewHolder(@NonNull View itemView) {
             super(itemView);
 
@@ -63,6 +97,8 @@ public class HistoryAdapter extends FirebaseRecyclerAdapter<BookingHistoryModel,
             seatNo = (TextView)itemView.findViewById(R.id.seatNotext);
             ticketNo = (TextView)itemView.findViewById(R.id.ticketNotext);
             fare = (TextView)itemView.findViewById(R.id.faretext);
+
+            btnDeleteHistory = (Button)itemView.findViewById(R.id.btnDeleteHistory);
         }
     }
 }

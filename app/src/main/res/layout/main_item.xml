@@ -202,6 +202,25 @@
             android:layout_below="@id/ticketNotext"
             android:layout_marginLeft="90dp"/>
 
+        <LinearLayout
+            android:layout_below="@id/faretext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnDeleteHistory"
+                android:layout_width="173dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="130dp"
+                android:text="Delete"
+                android:textAllCaps="false"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+        </LinearLayout>
+
 
     </RelativeLayout>
 
