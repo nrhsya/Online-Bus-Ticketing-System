@@ -92,7 +92,8 @@ public class BookingHistoryMainPage extends AppCompatActivity {
         }
 
         Executor executor = ContextCompat.getMainExecutor(this);
-        BiometricPrompt biometricPrompt = new BiometricPrompt(BookingHistoryMainPage.this, executor, new BiometricPrompt.AuthenticationCallback() {
+        BiometricPrompt biometricPrompt = new BiometricPrompt(BookingHistoryMainPage.this, executor, new BiometricPrompt.AuthenticationCallback()
+        {
             @Override
             public void onAuthenticationError(int errorCode, @NonNull CharSequence errString) {
                 super.onAuthenticationError(errorCode, errString);
