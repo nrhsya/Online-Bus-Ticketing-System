@@ -50,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
 
         btLocation = findViewById(R.id.bt_location);
 
+        //GPS SENSOR IMPLEMENTATION
         //Initialize fusedLocationProviderClient
 /*
         btLocation.setOnClickListener(new View.OnClickListener() {

@@ -62,7 +62,14 @@ dependencies {
     //recyclerview(kalai)
     implementation 'com.google.firebase:firebase-database:17.5.0'
 
+    // GPS Location (Laina)
+    implementation 'com.google.android.gms:play-services-location:20.0.0'
+
+
+
 }
 
-apply plugin: 'com.google.gms.google-services'
-apply plugin: 'com.android.application'
+    apply plugin: 'com.google.gms.google-services'
+    apply plugin: 'com.android.application'
+
+
