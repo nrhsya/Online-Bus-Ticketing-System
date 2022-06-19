@@ -89,16 +89,6 @@
                     </LinearLayout>
 
 
-                    <TextView
-                        android:id="@+id/textView3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_below="@+id/linearLayout"
-                        android:layout_marginTop="8dp"
-                        android:text="12 JUNE 2022"
-                        android:textAlignment="center"
-                        android:textColor="#FFFFFF"
-                        android:textSize="18sp" />
 
                 </RelativeLayout>
 
