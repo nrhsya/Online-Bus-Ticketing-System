@@ -1,8 +1,5 @@
 package com.hasya.onlinebusticketingsystem;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.cardview.widget.CardView;
-
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -10,11 +7,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.GridLayout;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 public class SelectSeat extends AppCompatActivity {
+
     GridLayout mainGrid;
     Double seatPrice = 27.00;
     Double totalCost = 0.0;
@@ -38,7 +37,8 @@ public class SelectSeat extends AppCompatActivity {
 
         //  firebaseAuth= FirebaseAuth.getInstance();
         // databaseReference = FirebaseDatabase.getInstance().getReference();
-        LinearLayout layoutSeat = new LinearLayout(this);
+
+       /* LinearLayout layoutSeat = new LinearLayout(this);
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         layoutSeat.setOrientation(LinearLayout.VERTICAL);
         layoutSeat.setLayoutParams(params);
@@ -48,12 +48,12 @@ public class SelectSeat extends AppCompatActivity {
         LinearLayout layout = null;
 
         int count = 0;
+*/
 
-
-        mainGrid = (GridLayout) findViewById(R.id.mainGrid);
+       // mainGrid = (GridLayout) findViewById(R.id.mainGrid);
         totalBookedSeats = (TextView) findViewById(R.id.total_seats);
         totalPrice = (TextView) findViewById(R.id.total_cost);
-        buttonBook = (Button) findViewById(R.id.btnBook);
+       // buttonBook = (Button) findViewById(R.id.btnBook);
 
         //Set Event
         setToggleEvent(mainGrid);

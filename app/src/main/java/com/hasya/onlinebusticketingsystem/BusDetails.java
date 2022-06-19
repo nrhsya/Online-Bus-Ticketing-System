@@ -22,8 +22,6 @@ public class BusDetails {
         this.seatNo = seatNo;
         this.ticketNo = ticketNo;
         this.fare = fare;
-
-
     }
 
     public String getBoarding() {
