@@ -53,13 +53,13 @@ public class BookingHistoryMainPage extends AppCompatActivity {
                         overridePendingTransition(0,0);
                         return true;
                     case R.id.payment:
-//                        startActivity(new Intent(getApplicationContext(),BookingActivity.class));
-//                        overridePendingTransition(0,0);
-//                        return true;
-//                    case R.id.Profile:
-//                        startActivity(new Intent(getApplicationContext(),BookingActivity.class));
-//                        overridePendingTransition(0,0);
-//                        return true;
+                        startActivity(new Intent(getApplicationContext(),PaymentMainpage.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.Profile:
+                        startActivity(new Intent(getApplicationContext(),Profile.class));
+                        overridePendingTransition(0,0);
+                        return true;
                 }
                 return false;
             }
