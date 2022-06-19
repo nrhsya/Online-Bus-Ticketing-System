@@ -47,7 +47,7 @@ public class User {
         return phone;
     }
 
-    public void setUser_phone(String user_phone) {
+    public void setUser_phone(String phone) {
         this.phone = phone;
     }
 
@@ -63,7 +63,7 @@ public class User {
         return password;
     }
 
-    public void setUser_password(String user_password) {
+    public void setUser_password(String password) {
         this.password = password;
     }
 }
