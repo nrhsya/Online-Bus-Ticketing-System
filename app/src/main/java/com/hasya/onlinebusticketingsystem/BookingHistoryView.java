@@ -70,7 +70,7 @@ public class BookingHistoryView extends AppCompatActivity {
 
         return super.onCreateOptionsMenu(menu);
     }
-
+//Search query
     private void txtSearch(String str)
     {
         FirebaseRecyclerOptions<BookingHistoryModel>options =

@@ -3,7 +3,9 @@ package com.hasya.onlinebusticketingsystem;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -35,6 +37,40 @@ public class PerformPayment extends AppCompatActivity {
 
         // Set Payment selected
         bottomNavigationView.setSelectedItemId(R.id.payment);
+
+        // Perform item selected listener
+        bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+
+                switch(item.getItemId())
+                {
+                    case R.id.home:
+                        startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                        overridePendingTransition(0,0);
+                        return true;
+//                    case R.id.booking:
+//                        startActivity(new Intent(getApplicationContext(),MainActivity.class));
+//                        overridePendingTransition(0,0);
+//                        return true;
+                    case R.id.bookingHistory:
+                        startActivity(new Intent(getApplicationContext(),BookingHistoryMainPage.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.payment:
+                        startActivity(new Intent(getApplicationContext(),PaymentMainpage.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                    case R.id.Profile:
+                        startActivity(new Intent(getApplicationContext(),Profile.class));
+                        overridePendingTransition(0,0);
+                        return true;
+                }
+                return false;
+            }
+        });
+
+        //end BOTTOM NAVIGATION
 
         name = (EditText)findViewById(R.id.editName);
         age = (EditText)findViewById(R.id.editAge);

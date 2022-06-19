@@ -83,9 +83,9 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="113dp"
-        android:layout_marginTop="463dp"
+        android:layout_marginTop="450dp"
         android:layout_marginEnd="125dp"
-        android:layout_marginBottom="220dp"
+        android:layout_marginBottom="219dp"
         android:text="Click Here" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

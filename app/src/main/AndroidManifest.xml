@@ -19,7 +19,7 @@
             android:name=".EditProfile"
             android:exported="false" />
         <activity
-            android:name=".PaymentMainpage"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".SelectSeat"
@@ -74,7 +74,7 @@
             android:name=".PaymentSettings"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".PaymentMainpage"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
